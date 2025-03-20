@@ -35,8 +35,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["md2html"]
+packages = ["md2html", "md2html.templates"]
 include-package-data = true
 
 [tool.setuptools.package-data]
-md2html = ["templates/*", "templates/base.html"]
+"md2html.templates" = ["*.html"]
