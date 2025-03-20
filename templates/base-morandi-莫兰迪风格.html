@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        :root {
+            --morandi-bg: #F5F5F5;
+            --morandi-text: #8B8B8B;
+            --morandi-primary: #A8A8A8;
+            --morandi-accent: #D4D4D4;
+            --morandi-border: #E0E0E0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--morandi-text);
+            background-color: var(--morandi-bg);
+        }
+
+        h1 {
+            color: var(--morandi-primary);
+            border-bottom: 2px solid var(--morandi-border);
+            padding-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: var(--morandi-primary);
+            margin-top: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            margin: 1.5rem 0;
+            color: var(--morandi-text);
+        }
+
+        code {
+            background-color: var(--morandi-accent);
+            padding: 0.3rem 0.5rem;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            color: var(--morandi-text);
+        }
+
+        pre {
+            background-color: var(--morandi-accent);
+            padding: 1.2rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid var(--morandi-border);
+        }
+
+        blockquote {
+            border-left: 4px solid var(--morandi-primary);
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+            color: var(--morandi-text);
+            font-style: italic;
+        }
+
+        a {
+            color: var(--morandi-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--morandi-text);
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid var(--morandi-border);
+            padding: 0.8rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--morandi-accent);
+            color: var(--morandi-primary);
+            font-weight: 300;
+        }
+
+        tr:hover {
+            background-color: var(--morandi-accent);
+        }
+    </style>
+</head>
+
+<body>
+    {{ content|safe }}
+</body>
+
+</html>
